@@ -1,0 +1,24 @@
+{% extends "blogs/_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="row mt-3">
+    <div class="mx-auto" style="width: 250px;">
+        <span>
+            <h2>Рейхстаг</h2>
+        </span>
+    </div>
+</div>
+
+
+<div class="row mt-3">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="{% url 'first_page' %}">Вернуться назад</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+{% endblock content %}
