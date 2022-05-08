@@ -35,6 +35,7 @@ def friend_page(request):
 	return render(request, 'blogs/friend.html', context)
 
 def first_page(request):
+<<<<<<< HEAD
 	return render(request, 'blogs/first_page.html')
 
 def piramyda_page(request):
@@ -102,3 +103,84 @@ def third_page(request):
 def fourth_page(request):
 	return render(request, 'blogs/fourth.html')
 
+=======
+	first_data = {
+		'first_name': 'Mirlan',
+	}
+	context = {
+		'first_data': first_data,
+	}
+	return render(request, 'blogs/first_page.html', context)
+
+def piramyda_page(request):
+	piramyda_data = {
+		'piramyda_name': 'Mika',
+	}
+	context = {
+		'piramyda_data': piramyda_data,
+	}
+	return render(request, 'blogs/piramyda.html', context)
+
+def kolizey_page(request):
+	kolizey_data = {
+		'kolizey_name': 'Mika',
+	}
+	context = {
+		'kolizey_data': kolizey_data,
+	}
+	return render(request, 'blogs/kolizey.html', context)
+
+def ploshad_page(request):
+	ploshad_data = {
+		'ploshad_name': 'Mika',
+	}
+	context = {
+		'ploshad_data': ploshad_data,
+	}
+	return render(request, 'blogs/ploshad.html', context)
+
+def efeleva_page(request):
+	efeleva_data = {
+		'efeleva_name': 'Mika',
+	}
+	context = {
+		'efeleva_data': efeleva_data,
+	}
+	return render(request, 'blogs/efeleva.html', context)
+
+def reykhstag_page(request):
+	reykhstag_data = {
+		'reykhstag_name': 'Mika',
+	}
+	context = {
+		'reykhstag_data': reykhstag_data,
+	}
+	return render(request, 'blogs/reykhstag.html', context)
+
+def petergov_page(request):
+	petergov_data = {
+		'petergov_name': 'Mika',
+	}
+	context = {
+		'petergov_data': petergov_data,
+	}
+	return render(request, 'blogs/petergov.html', context)
+
+def luvr_page(request):
+	luvr_data = {
+		'luvr_name': 'Mika',
+	}
+	context = {
+		'luvr_data': luvr_data,
+	}
+	return render(request, 'blogs/luvr.html', context)
+
+def kreml_page(request):
+	kreml_data = {
+		'kreml_name': 'Mika',
+	}
+	context = {
+		'kreml_data': kreml_data,
+	}
+	return render(request, 'blogs/kreml.html', context)
+>>>>>>> 54e7d8fd22b43bf5e8f31c1208bf24ad93721ef2
