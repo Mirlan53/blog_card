@@ -1,0 +1,24 @@
+{% extends "blogs/_base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row mt-4">
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="{% url 'first_page' %}">1</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'second_page' %}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'third_page' %}">3</a></li>
+        <li class="page-item active"><a class="page-link" href="{% url 'fourth_page' %}">4</a></li>
+        <li>
+            <a class="page-link" href="{% url 'first_page' %}">Next</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+{% endblock content %}

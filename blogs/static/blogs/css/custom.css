@@ -1,0 +1,16 @@
+.element-anons {
+    font-size: 17px;
+}
+
+.blog-card {
+	height: 400px;
+}
+
+.blog-button {
+	position: absolute;
+	bottom: 18px;
+}
+
+.card-img-top {
+	cursor: pointer;
+}

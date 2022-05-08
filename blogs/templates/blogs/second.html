@@ -1,0 +1,134 @@
+{% extends "blogs/_base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+    <!--       <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+     -->      
+            <div class="modal-body d-flex gap-2">
+                <img src="" alt="">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="mx-auto" style="width: 500px;">
+        <span>
+            <h2>Исторические строения мира</h2>
+        </span>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-3 mt-2">
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/khram.jpg' %}" class="card-img-top" alt="Строение"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Саграда Фамилия</h5>
+                <p class="card-text-center">Саграда Фамилия – поразительный по красоте храм Барселоны.</p>
+                <a href="{% url 'khram_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/statuya.jpg' %}" class="card-img-top" alt="Строение2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Статуя Свободы</h5>
+                <p class="card-text-center">Статуя Свободы — одна из самых знаменитых скульптур в мире.</p>
+                <a href="{% url 'statuya_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/tadzh_makhal.jpg' %}" class="card-img-top" alt="Строение3" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Тадж-Махал</h5>
+                <p class="card-text-center">Тадж-Махал — мавзолей-мечеть в Агре.
+                </p>
+                <a href="{% url 'tadzh_makhal_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/big_ben.jpg' %}" class="card-img-top" alt="Строение4" data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Биг-Бен</h5>
+                <p class="card-text-center">Биг-Бен - достопримечательность столицы Великобритании.</p>
+                <a href="{% url 'big_ben_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-3 mt-2">
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/kitayskaya_stena.jpg' %}" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Великая Китайская стена</h5>
+                <p class="card-text-center">Великая Китайская стена пролегает через северные регионы современного Китая.</p>
+                <a href="{% url 'kitayskaya_stena_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/notr_dam.jpg' %}" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Собор</h5>
+                <p class="card-text-center">Собор Парижской Богоматери – величественный католический храм на острове Сите в центре Парижа.</p>
+                <a href="{% url 'notr_dam_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/fort_boyard.jpg' %}" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Форт Боярд</h5>
+                <p class="card-text-center">Форт Боярд – каменная крепость.</p>
+                <a href="{% url 'fort_boyard_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-lg-2 col-md-4 col-sm-12">
+        <div class="card blog-card">
+            <img src="{% static 'blogs/img/machu_pikchu.jpg' %}" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal" style="height: 177px;">
+            <div class="card-body">
+                <h5 class="card-title">Мачу-Пикчу</h5>
+                <p class="card-text-center">Мачу-Пикчу — легендарный город, который укрыт в сердце Анд на высоте 2400 м.</p>
+                <a href="{% url 'machu_pikchu_page' %}" class="btn btn-primary blog-button">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-4">
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="{% url 'first_page' %}">1</a></li>
+        <li class="page-item active"><a class="page-link" href="{% url 'second_page' %}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'third_page' %}">3</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'friend_page' %}">4</a></li>
+        <li>
+            <a class="page-link" href="{% url 'third_page' %}">Next</a>
+        </li>
+    </ul>
+</nav>
+</div>
+
+{% endblock content %}
